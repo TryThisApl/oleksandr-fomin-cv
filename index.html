@@ -496,14 +496,19 @@
   @page { size: A4; margin: 0; }
 
   /* DOWNLOAD PDF BUTTON */
+  .pdf-download-wrap {
+    width: 210mm;
+    max-width: 100%;
+    margin: 0 auto 48px;
+    padding: 0 18mm;
+    display: flex;
+    justify-content: center;
+  }
   .pdf-download {
-    position: fixed;
-    bottom: 24px;
-    right: 24px;
     background: var(--paper);
     color: var(--ink);
     border: 1px solid rgba(20, 22, 26, 0.14);
-    padding: 11px 18px;
+    padding: 12px 22px;
     border-radius: 999px;
     font-family: 'Geist Mono', monospace;
     font-size: 8.5pt;
@@ -516,7 +521,6 @@
       0 6px 16px -6px rgba(0,0,0,0.18),
       0 12px 32px -12px rgba(0,0,0,0.12);
     transition: color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-    z-index: 100;
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -555,7 +559,7 @@
       min-height: 297mm;
       padding: 12mm 14mm 10mm;
     }
-    .pdf-download { display: none !important; }
+    .pdf-download-wrap { display: none !important; }
   }
 </style>
 </head>
@@ -729,10 +733,12 @@
 
 </div>
 
-<button class="pdf-download" onclick="downloadPdf()" aria-label="Download CV as PDF">
-  Download PDF
-  <span class="arrow" aria-hidden="true"></span>
-</button>
+<div class="pdf-download-wrap">
+  <button class="pdf-download" onclick="downloadPdf()" aria-label="Download CV as PDF">
+    Download PDF
+    <span class="arrow" aria-hidden="true"></span>
+  </button>
+</div>
 
 <script>
   function downloadPdf() {
