@@ -2,6 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Oleksandr Fomin — Lead Software Engineer, FinTech / .NET. Curriculum Vitae.">
+<meta name="author" content="Oleksandr Fomin">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Oleksandr Fomin — Curriculum Vitae">
+<meta property="og:description" content="Lead Software Engineer with 7 years in FinTech, currently leading 2 scrum teams on a collateral platform on Azure.">
+<meta property="og:url" content="https://trythisapl.github.io/oleksandr-fomin-cv/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%228%22%20fill%3D%22%23fafaf7%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2244%22%20font-family%3D%22Geist%2C%20system-ui%2C%20sans-serif%22%20font-size%3D%2234%22%20font-weight%3D%22600%22%20fill%3D%22%238b3a2f%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%22-1%22%3EOF%3C%2Ftext%3E%3C%2Fsvg%3E">
 <title>Oleksandr Fomin — Curriculum Vitae</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,7 +64,10 @@
 
   /* MASTHEAD */
   .masthead {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
     padding-bottom: 22px;
     border-bottom: 1px solid var(--rule);
   }
@@ -557,6 +569,14 @@
       padding: 12mm 14mm 10mm;
     }
     .pdf-download-wrap { display: none !important; }
+    .employer, .position, .edu-item, .achievement {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    h2 {
+      break-after: avoid;
+      page-break-after: avoid;
+    }
   }
 </style>
 </head>
@@ -569,6 +589,11 @@
       <h1>Oleksandr <span class="accent">Fomin</span></h1>
       <div class="role-line">Lead Software Engineer — FinTech | .NET</div>
     </div>
+    <div class="folio">
+      <span class="num">26</span>
+      Curriculum Vitae<br>
+      Kyiv · 2026
+    </div>
   </header>
 
   <div class="columns">
@@ -576,7 +601,7 @@
     <main class="left">
 
       <section>
-        <h2>Experience</h2>
+        <h2><span class="num">01</span>Experience</h2>
 
         <article class="employer">
           <div class="employer-header">
@@ -591,9 +616,9 @@
             <div class="position-body">
               <div class="position-title">Lead Software Engineer <span class="position-context">· Collateral web application · Azure</span></div>
               <ul class="role-bullets">
-                <li>Day-to-day collaboration with Product to create new web application for collateral workflows, create requirements and transform them into features.</li>
+                <li>Day-to-day collaboration with Product to create a new web application for collateral workflows, gather requirements and transform them into features.</li>
                 <li>Lead architecture and implementation across <strong>2 scrum teams</strong> — Angular UI, C# services, Azure Service Bus and Bicep IaC.</li>
-                <li>Mentor engineers on effective use of Claude Code and GitHub Copilot, embedding AI-assisted workflows into daily practice. Developed internal AI multi-agentic system.</li>
+                <li>Mentor engineers on effective use of Claude Code and GitHub Copilot, embedding AI-assisted workflows into daily practice. Developed an internal multi-agent AI system.</li>
               </ul>
             </div>
           </div>
@@ -603,7 +628,7 @@
               Mar 2023 — Sep 2024
             </div>
             <div class="position-body">
-              <div class="position-title">Senior Software Engineer <span class="position-context">· Desktop application - Collateral</span></div>
+              <div class="position-title">Senior Software Engineer <span class="position-context">· Desktop application — Collateral</span></div>
               <ul class="role-bullets">
                 <li>Designed and built domain services using DDD within a service-oriented architecture, powering calculation logic for new collateral workflows and integrations with external vendors.</li>
               </ul>
@@ -617,7 +642,7 @@
             <div class="position-body">
               <div class="position-title">Software Engineer <span class="position-context">· Desktop application — Core transactions</span></div>
               <ul class="role-bullets">
-                <li>Maintained and extended core booking-engine logic in legacy APL. Built C# layer to expose functionality via API.</li>
+                <li>Maintained and extended core booking-engine logic in legacy APL. Built a C# layer to expose functionality via API.</li>
               </ul>
             </div>
           </div>
@@ -625,14 +650,14 @@
       </section>
 
       <section>
-        <h2>Education</h2>
+        <h2><span class="num">02</span>Education</h2>
 
         <article class="edu-item">
           <div class="edu-period">2017 — 2019</div>
           <div>
             <div class="edu-degree">Master's degree, Econometrics &amp; Quantitative Economics</div>
             <div class="edu-school"><strong>University of Houston</strong> — Houston, TX</div>
-            <div class="edu-note"><span class="grade">A · 92/100</span> Joint programme with KSE</div>
+            <div class="edu-note"><span class="grade">A · 92/100</span> Joint program with KSE</div>
           </div>
         </article>
 
@@ -663,7 +688,7 @@
     <aside class="right">
 
       <section>
-        <h2>Contact</h2>
+        <h2><span class="num">03</span>Contact</h2>
         <ul class="contact-list">
           <li><span class="label">Loc</span><span class="value">Kyiv, Ukraine</span></li>
           <li><span class="label">Mail</span><span class="value"><a href="mailto:fomin.alex23@gmail.com">fomin.alex23@gmail.com</a></span></li>
@@ -673,7 +698,7 @@
       </section>
 
       <section>
-        <h2>Stack</h2>
+        <h2><span class="num">04</span>Stack</h2>
 
         <div class="skill-group">
           <div class="cat">Languages</div>
@@ -707,12 +732,12 @@
 
         <div class="skill-group">
           <div class="cat">Domain</div>
-          <div class="items">FinTech <span class="sep">·</span> Collateral <span class="sep">·</span> Risk</div>
+          <div class="items">FinTech <span class="sep">·</span> Collateral <span class="sep">·</span> Banking</div>
         </div>
       </section>
 
       <section>
-        <h2>Languages</h2>
+        <h2><span class="num">05</span>Languages</h2>
         <ul class="lang-list">
           <li><span class="name">Ukrainian</span><span class="level native">Native</span></li>
           <li><span class="name">English</span><span class="level">Fluent · C1</span></li>
