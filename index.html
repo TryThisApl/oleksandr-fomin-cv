@@ -497,10 +497,7 @@
 
   /* DOWNLOAD PDF BUTTON */
   .pdf-download-wrap {
-    width: 210mm;
-    max-width: 100%;
-    margin: 0 auto 48px;
-    padding: 0 18mm;
+    margin-top: 24px;
     display: flex;
     justify-content: center;
   }
@@ -731,13 +728,13 @@
     <span>Updated · 2026</span>
   </footer>
 
-</div>
+  <div class="pdf-download-wrap">
+    <button class="pdf-download" onclick="downloadPdf()" aria-label="Download CV as PDF">
+      Download PDF
+      <span class="arrow" aria-hidden="true"></span>
+    </button>
+  </div>
 
-<div class="pdf-download-wrap">
-  <button class="pdf-download" onclick="downloadPdf()" aria-label="Download CV as PDF">
-    Download PDF
-    <span class="arrow" aria-hidden="true"></span>
-  </button>
 </div>
 
 <script>
